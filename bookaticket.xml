@@ -1,0 +1,9 @@
+
+
+<suite name="data Provider">
+  <test thread-count="5" name="book a ticket">
+    <classes>
+      <class name="com.trello.qspiders.learntestng.DataDrivenTestingByClass"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

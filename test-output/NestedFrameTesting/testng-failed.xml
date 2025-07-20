@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NestedFrameTesting]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Nested(failed)">
+    <parameter name="browsername" value="edge"/>
+    <parameter name="text" value="Nikhil"/>
+    <parameter name="url" value="https://demo.automationtesting.in/Frames.html"/>
+    <classes>
+      <class name="iframes.NestedFrame">
+        <methods>
+          <include name="nestedFrames" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- iframes.NestedFrame -->
+    </classes>
+  </test> <!-- Nested(failed) -->
+</suite> <!-- Failed suite [NestedFrameTesting] -->

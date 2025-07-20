@@ -1,0 +1,18 @@
+
+<suite name="Suite">
+<groups>
+<run>
+<include name="adhoc"></include>
+<include name="functional"></include>
+<include name="performance"></include>
+<exclude name="accessabilty"></exclude>
+</run>
+</groups>
+  <test thread-count="5" name="adhoc">
+    <classes>
+      <class name="com.trello.qspiders.learntestng.GroupA"/>
+      <class name="com.trello.qspiders.learntestng.GroupC"/>
+      <class name="com.trello.qspiders.learntestng.GroupB"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

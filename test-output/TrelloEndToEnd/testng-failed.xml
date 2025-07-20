@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TrelloEndToEnd]">
+  <test thread-count="5" name="CreationAndDeletionOfBoard(failed)">
+    <classes>
+      <class name="com.trello.qspiders.trelloendtoend.TrelloEndToEnd">
+        <methods>
+          <include name="configBeforeMethod"/>
+          <include name="configAfterMethod"/>
+          <include name="DragAndDrop"/>
+          <include name="sortWithoutDragAndDrop"/>
+          <include name="CreateBoardFromStaticBar"/>
+          <include name="check"/>
+          <include name="DragAndDrop1"/>
+        </methods>
+      </class> <!-- com.trello.qspiders.trelloendtoend.TrelloEndToEnd -->
+    </classes>
+  </test> <!-- CreationAndDeletionOfBoard(failed) -->
+</suite> <!-- Failed suite [TrelloEndToEnd] -->

@@ -1,0 +1,17 @@
+
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.trello.MyProject.learntestng.ExecuteSameTestcaseMultipleTimes"/>
+      <class name="com.trello.MyProject.learntestng.UsageOfBeforeAndAfterMethod"/>
+      <class name="com.trello.MyProject.learntestng.WhatIfMultipleTestAnnotationsINTheClass"/>
+      <class name="com.trello.MyProject.learntestng.GroupA"/>
+      <class name="com.trello.MyProject.learntestng.UserDefinedOrder"/>
+      <class name="com.trello.MyProject.learntestng.GroupC"/>
+      <class name="com.trello.MyProject.learntestng.DataDrivenTestingByClass"/>
+      <class name="com.trello.MyProject.learntestng.DisableTestCaseFromExecution"/>
+      <class name="com.trello.MyProject.learntestng.GroupB"/>
+      <class name="com.trello.MyProject.learntestng.OrderOfBasicAnnotations"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

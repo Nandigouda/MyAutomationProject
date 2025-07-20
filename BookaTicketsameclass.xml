@@ -1,0 +1,8 @@
+
+<suite name="datainsameclass">
+  <test thread-count="5" name="dataproviderwithsameclass">
+    <classes>
+      <class name="com.trello.MyProject.learntestng.DataDrivenTestingByClass"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

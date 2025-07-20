@@ -1,0 +1,11 @@
+
+<suite name="NestedFrameTesting">
+  <test thread-count="5" name="Nested">
+  <parameter name="browsername" value="chrome" ></parameter>
+  <parameter name="url" value="https://demo.automationtesting.in/Frames.html"></parameter>
+  <parameter name="text" value="Nikhil"></parameter>
+  <classes>
+  <class name="iframes.NestedFrame"></class>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,13 @@
+
+<suite name="Suite">
+  <test thread-count="5" name="runtime">
+  
+  <parameter name="browserName" value="chrome"></parameter>
+  <classes>
+  <class   name="com.trello.qspiders.learntestng.SupplyData">
+  
+  </class>
+  </classes>
+  
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,11 @@
+
+<suite name="IframeTest">
+  <test thread-count="5" name="IframeTest">
+  <parameter name="browserName" value="chrome" ></parameter>
+  <parameter name="url" value="https://illustrious-macaron-a7bce2.netlify.app/"></parameter>
+ 
+  <classes>
+  <class name="iframes.IframeTest"></class>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
