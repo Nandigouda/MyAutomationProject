@@ -37,7 +37,7 @@ public class WebdriverUtility {
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-		boolean validation = wait.until(ExpectedConditions.titleIs(expectedTitle));
+		boolean validation = wait.until(ExpectedConditions.urlToBe(expectedTitle));
 		return validation;
 	}
 
