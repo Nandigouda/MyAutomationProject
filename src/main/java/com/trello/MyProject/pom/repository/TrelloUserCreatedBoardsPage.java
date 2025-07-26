@@ -13,11 +13,21 @@ public class TrelloUserCreatedBoardsPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//span[@class='show-sidebar-button-react-root']")
+	@FindBy(xpath = "//span[@class='nch-icon hChYpzFshATQo8 FQRfhpoLVAyxHI r1ljm7etlgUs0w']//span[@class='_1e0c1o8l _1o9zidpf _vyfuvuon _vwz4kb7n _1szv15vq _1tly15vq _rzyw1osq _17jb1osq _1ksvoz0e _3se1x1jp _re2rglyw _1veoyfq0 _1kg81r31 _jcxd1r8n _gq0g1onz _1trkwc43']")
 	private WebElement profileIcon;
+	
+	
 
 	public WebElement getProfileIcon() {
 		return profileIcon;
+	}
+	@FindBy(xpath = "//span[@title='Nikhil Nandigoud (nikhilnandigoud)']")
+	private WebElement profileIcon1;
+	
+	
+
+	public WebElement getProfileIcon1() {
+		return profileIcon1;
 	}
 
 	@FindBy(xpath = "//a[@class='open-card-composer js-open-card-composer']")
@@ -34,35 +44,35 @@ public class TrelloUserCreatedBoardsPage {
 		return moreOption;
 	}
 
-	@FindBy(xpath = "//ul/li/a[contains(@class,' js-close-board')]")
+	@FindBy(xpath = "//li[20]//button[1]")
 	private WebElement closeBoard;
 
 	public WebElement getCloseBoard() {
 		return closeBoard;
 	}
 
-	@FindBy(xpath = "//p[text()='You can find and reopen closed boards at the bottom of ']/following-sibling::input[@type='submit']")
+	@FindBy(xpath = "//button[normalize-space()='Close']")
 	private WebElement closeBoardButton;
 
 	public WebElement getCloseBoardButton() {
 		return closeBoardButton;
 	}
 
-	@FindBy(xpath = "//div/button[text()='Permanently delete board']")
+	@FindBy(xpath = "//li/button[text()='Permanently delete board']")
 	private WebElement deletePermenantLinltext;
 
 	public WebElement getDeletePermenantLinltext() {
 		return deletePermenantLinltext;
 	}
 
-	@FindBy(xpath = "//div/button[text()='Delete']")
+	@FindBy(xpath = "//button[normalize-space()='Permanently delete board']")
 	private WebElement deletePermanentButton;
 
 	public WebElement getDeletePermanentButton() {
 		return deletePermanentButton;
 	}
 
-	@FindBy(xpath = "//input[@type='submit']")
+	@FindBy(xpath = "//div/button[text()='Add list']")
 	private WebElement addcardbutton;
 
 	public WebElement getAddcardbutton() {

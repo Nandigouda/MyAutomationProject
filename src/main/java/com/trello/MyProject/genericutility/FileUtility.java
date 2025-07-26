@@ -21,7 +21,7 @@ public class FileUtility {
 	 */
 
 	public String readDataFromPropertyFile(String key) throws IOException {
-		FileInputStream fis = new FileInputStream("./src/test/resources/amazoncommondata.properties");
+		FileInputStream fis = new FileInputStream("./src/test/resources/trellocommondata.properties");
 
 		Properties pobj = new Properties();
 		pobj.load(fis);

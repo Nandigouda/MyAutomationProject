@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testRunner.CucumerTestRunner">
+      <class name="com.trello.MyProject.trelloendtoend.TrelloEndToEnd">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="DragAndDrop"/>
+          <include name="beforeMethod"/>
+          <include name="Dra"/>
+          <include name="configBeforeMethod"/>
+          <include name="configAfterMethod"/>
         </methods>
-      </class> <!-- testRunner.CucumerTestRunner -->
+      </class> <!-- com.trello.MyProject.trelloendtoend.TrelloEndToEnd -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

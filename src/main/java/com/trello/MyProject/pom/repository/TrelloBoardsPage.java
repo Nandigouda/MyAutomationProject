@@ -15,7 +15,7 @@ public class TrelloBoardsPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//p/span[text()='Create new board']")
+	@FindBy(xpath = "//span[normalize-space()='Create new board']")
 	private WebElement createBoard;
 
 	public WebElement getCreateBoard() {
@@ -43,14 +43,14 @@ public class TrelloBoardsPage {
 		return CreatBoadrdClick;
 	}
 
-	@FindBy(xpath = "//button[@data-testid='header-member-menu-button']")
+	@FindBy(xpath = "//span[@class='lyE6dN0zPcEtwe PXrUPxLInxAuOB UUXk7U_m2LcHHZ']")
 	private WebElement profileIcon;
 
 	public WebElement getProfileIcon() {
 		return profileIcon;
 	}
 
-	@FindBy(xpath = "//button/span[text()='Log out']")
+	@FindBy(xpath = "//button[@data-testid='account-menu-logout']//span[@class='bH80RvHHmoWYhk']")
 	private WebElement Logoutoption;
 
 	public WebElement getLogoutoption() {

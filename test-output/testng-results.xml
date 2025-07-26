@@ -1,47 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="5" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-23T23:12:01 IST" name="Cucumber Test Suite" finished-at="2025-07-23T23:12:13 IST" duration-ms="11910">
+  <suite started-at="2025-07-26T12:49:32 IST" name="Default suite" finished-at="2025-07-26T12:49:32 IST" duration-ms="104">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.CucumerTestRunner@5c6648b0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-07-23T23:12:01 IST" name="Cucumber Feature Test" finished-at="2025-07-23T23:12:13 IST" duration-ms="11910">
-      <class name="testRunner.CucumerTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.CucumerTestRunner@5c6648b0]" started-at="2025-07-23T23:12:01 IST" name="setUpClass" finished-at="2025-07-23T23:12:02 IST" duration-ms="680" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@7bb35cc6]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-07-26T12:49:32 IST" name="Default test" finished-at="2025-07-26T12:49:32 IST" duration-ms="104">
+      <class name="com.trello.MyProject.trelloendtoend.TrelloEndToEnd">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.trello.MyProject.trelloendtoend.TrelloEndToEnd@3349e9bb]" started-at="2025-07-26T12:49:32 IST" name="beforeMethod" finished-at="2025-07-26T12:49:32 IST" duration-ms="11" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "driver" is null
+at com.trello.MyProject.genericutility.WebdriverUtility.implicitWait(WebdriverUtility.java:27)
+at com.trello.MyProject.trelloendtoend.TrelloEndToEnd.beforeMethod(TrelloEndToEnd.java:83)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.CucumerTestRunner@5c6648b0]" started-at="2025-07-23T23:12:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-23T23:12:13 IST" duration-ms="11128" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Check login is successful with valid creds"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login page Automation of saucedemo app"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="configBeforeMethod()[pri:0, instance:com.trello.MyProject.trelloendtoend.TrelloEndToEnd@3349e9bb]" started-at="2025-07-26T12:49:32 IST" name="configBeforeMethod" finished-at="2025-07-26T12:49:32 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.CucumerTestRunner@5c6648b0]" started-at="2025-07-23T23:12:13 IST" name="tearDownClass" finished-at="2025-07-23T23:12:13 IST" duration-ms="39" status="PASS">
+        </test-method> <!-- configBeforeMethod -->
+        <test-method is-config="true" signature="Dra()[pri:0, instance:com.trello.MyProject.trelloendtoend.TrelloEndToEnd@3349e9bb]" started-at="2025-07-26T12:49:32 IST" name="Dra" finished-at="2025-07-26T12:49:32 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- testRunner.CucumerTestRunner -->
-    </test> <!-- Cucumber Feature Test -->
-  </suite> <!-- Cucumber Test Suite -->
+        </test-method> <!-- Dra -->
+        <test-method signature="DragAndDrop()[pri:0, instance:com.trello.MyProject.trelloendtoend.TrelloEndToEnd@3349e9bb]" started-at="2025-07-26T12:49:32 IST" name="DragAndDrop" finished-at="2025-07-26T12:49:32 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "driver" is null
+at com.trello.MyProject.genericutility.WebdriverUtility.implicitWait(WebdriverUtility.java:27)
+at com.trello.MyProject.trelloendtoend.TrelloEndToEnd.beforeMethod(TrelloEndToEnd.java:83)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DragAndDrop -->
+        <test-method is-config="true" signature="configAfterMethod()[pri:0, instance:com.trello.MyProject.trelloendtoend.TrelloEndToEnd@3349e9bb]" started-at="2025-07-26T12:49:32 IST" name="configAfterMethod" finished-at="2025-07-26T12:49:32 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterMethod -->
+      </class> <!-- com.trello.MyProject.trelloendtoend.TrelloEndToEnd -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

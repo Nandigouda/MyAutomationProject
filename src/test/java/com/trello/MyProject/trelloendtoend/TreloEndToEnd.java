@@ -46,12 +46,14 @@ public class TreloEndToEnd extends BaseClass {
 
 		TrelloUserCreatedBoardsPage createdPage = new TrelloUserCreatedBoardsPage(driver);
 		Thread.sleep(1000);
-		driver.navigate().refresh();
+	    driver.navigate().refresh();
 
 		createdPage.getProfileIcon().click();
-		createdPage.getMoreOption().click();
+		
 		createdPage.getCloseBoard().click();
 		createdPage.getCloseBoardButton().click();
+		Thread.sleep(3000);
+		utility.elementToBeClickble(driver, createdPage.getProfileIcon()).click();
 		createdPage.getDeletePermenantLinltext().click();
 		createdPage.getDeletePermanentButton().click();
 		Reporter.log("BoardPage successfully deleted");

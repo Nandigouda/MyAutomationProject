@@ -10,6 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -56,11 +57,12 @@ public class TrelloEndToEnd extends BaseClass {
 		created.getProfileIcon().click();
 		Reporter.log("Boardpage  clicked");
 		// utility.elementToBeClickble(driver, created.getMoreOption()).click();
-		created.getMoreOption().click();
+	//	created.getMoreOption().click();
 		// utility.elementToBeClickble(driver, created.getCloseBoard()).click();
 		created.getCloseBoard().click();
 		// utility.elementToBeClickble(driver, created.getCloseBoardButton()).click();
 		created.getCloseBoardButton().click();
+		created.getProfileIcon().click();
 		// utility.elementToBeClickble(driver,
 		// created.getDeletePermenantLinltext()).click();
 		created.getDeletePermenantLinltext().click();
@@ -76,7 +78,7 @@ public class TrelloEndToEnd extends BaseClass {
 
 	}
 
-	// @BeforeClass
+	@BeforeClass
 	public void beforeMethod() throws IOException {
 		utility.implicitWait(driver);
 		TrelloHomePage homePage = new TrelloHomePage(driver);
@@ -108,7 +110,7 @@ public class TrelloEndToEnd extends BaseClass {
 
 	}
 
-	//@BeforeMethod
+	@BeforeMethod
 	public void Dra() throws IOException {
 		utility.implicitWait(driver);
 		TrelloHomePage homePage = new TrelloHomePage(driver);
@@ -230,11 +232,12 @@ public class TrelloEndToEnd extends BaseClass {
 		created.getProfileIcon().click();
 		Reporter.log("Boardpage  clicked");
 		// utility.elementToBeClickble(driver, created.getMoreOption()).click();
-		created.getMoreOption().click();
+		//created.getMoreOption().click();
 		// utility.elementToBeClickble(driver, created.getCloseBoard()).click();
 		created.getCloseBoard().click();
 		// utility.elementToBeClickble(driver, created.getCloseBoardButton()).click();
 		created.getCloseBoardButton().click();
+		created.getProfileIcon().click();
 		// utility.elementToBeClickble(driver,
 		// created.getDeletePermenantLinltext()).click();
 		created.getDeletePermenantLinltext().click();
