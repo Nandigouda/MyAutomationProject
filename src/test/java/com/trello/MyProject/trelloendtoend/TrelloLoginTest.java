@@ -18,7 +18,7 @@ import com.trello.MyProject.pom.repository.TrelloLogoutPage;
 import com.trello.MyProject.pom.repository.TrelloPasswordPage;
 import com.trello.MyProject.pom.repository.TrelloUserCreatedBoardsPage;
 
-public class TrelloLoginTest extends BaseClass {
+public class TrelloLoginTest extends BaseClass { 
 
 	@Test
 	public void homeCheck_01() throws IOException, InterruptedException {
@@ -76,6 +76,7 @@ public class TrelloLoginTest extends BaseClass {
 		Thread.sleep(3000);
 		created.getDeletePermanentButton().click();
 		Reporter.log("BoardPage successfully deleted");
+		
 		Thread.sleep(3000);
 		boardsPage.getProfileIcon().click();
 

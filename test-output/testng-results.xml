@@ -1,103 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Manage Your Team’s Projects From Anywhere | Trello]]>
+    </line>
+    <line>
+      <![CDATA[Trello LoginPage Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Trello HomePage Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Trello Login with  Atlassian page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Boards Profile Home Page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Boardpage  clicked]]>
+    </line>
+    <line>
+      <![CDATA[BoardPage successfully deleted]]>
+    </line>
+    <line>
+      <![CDATA[Successfually LogedOut of Application]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-07-26T12:49:32 IST" name="Default suite" finished-at="2025-07-26T12:49:32 IST" duration-ms="104">
+  <suite started-at="2025-07-27T23:17:24 IST" name="TrelloLoginTest" finished-at="2025-07-27T23:18:09 IST" duration-ms="44655">
     <groups>
     </groups>
-    <test started-at="2025-07-26T12:49:32 IST" name="Default test" finished-at="2025-07-26T12:49:32 IST" duration-ms="104">
-      <class name="com.trello.MyProject.trelloendtoend.TrelloEndToEnd">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.trello.MyProject.trelloendtoend.TrelloEndToEnd@3349e9bb]" started-at="2025-07-26T12:49:32 IST" name="beforeMethod" finished-at="2025-07-26T12:49:32 IST" duration-ms="11" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "driver" is null
-at com.trello.MyProject.genericutility.WebdriverUtility.implicitWait(WebdriverUtility.java:27)
-at com.trello.MyProject.trelloendtoend.TrelloEndToEnd.beforeMethod(TrelloEndToEnd.java:83)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="configBeforeMethod()[pri:0, instance:com.trello.MyProject.trelloendtoend.TrelloEndToEnd@3349e9bb]" started-at="2025-07-26T12:49:32 IST" name="configBeforeMethod" finished-at="2025-07-26T12:49:32 IST" duration-ms="0" status="SKIP">
+    <test started-at="2025-07-27T23:17:24 IST" name="CreationAndDeletionOfBoardTrelloBoard" finished-at="2025-07-27T23:18:09 IST" duration-ms="44655">
+      <class name="com.trello.MyProject.trelloendtoend.TrelloLoginTest">
+        <test-method is-config="true" signature="configBeforeMethod()[pri:0, instance:com.trello.MyProject.trelloendtoend.TrelloLoginTest@9f116cc]" started-at="2025-07-27T23:17:24 IST" name="configBeforeMethod" finished-at="2025-07-27T23:17:31 IST" duration-ms="6998" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBeforeMethod -->
-        <test-method is-config="true" signature="Dra()[pri:0, instance:com.trello.MyProject.trelloendtoend.TrelloEndToEnd@3349e9bb]" started-at="2025-07-26T12:49:32 IST" name="Dra" finished-at="2025-07-26T12:49:32 IST" duration-ms="0" status="SKIP">
+        <test-method signature="homeCheck_01()[pri:0, instance:com.trello.MyProject.trelloendtoend.TrelloLoginTest@9f116cc]" started-at="2025-07-27T23:17:31 IST" name="homeCheck_01" finished-at="2025-07-27T23:18:08 IST" duration-ms="36618" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Manage Your Team’s Projects From Anywhere | Trello]]>
+            </line>
+            <line>
+              <![CDATA[Trello LoginPage Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Trello HomePage Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Trello Login with  Atlassian page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Boards Profile Home Page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Boardpage  clicked]]>
+            </line>
+            <line>
+              <![CDATA[BoardPage successfully deleted]]>
+            </line>
+            <line>
+              <![CDATA[Successfually LogedOut of Application]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- Dra -->
-        <test-method signature="DragAndDrop()[pri:0, instance:com.trello.MyProject.trelloendtoend.TrelloEndToEnd@3349e9bb]" started-at="2025-07-26T12:49:32 IST" name="DragAndDrop" finished-at="2025-07-26T12:49:32 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "driver" is null
-at com.trello.MyProject.genericutility.WebdriverUtility.implicitWait(WebdriverUtility.java:27)
-at com.trello.MyProject.trelloendtoend.TrelloEndToEnd.beforeMethod(TrelloEndToEnd.java:83)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DragAndDrop -->
-        <test-method is-config="true" signature="configAfterMethod()[pri:0, instance:com.trello.MyProject.trelloendtoend.TrelloEndToEnd@3349e9bb]" started-at="2025-07-26T12:49:32 IST" name="configAfterMethod" finished-at="2025-07-26T12:49:32 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- homeCheck_01 -->
+        <test-method is-config="true" signature="configAfterMethod()[pri:0, instance:com.trello.MyProject.trelloendtoend.TrelloLoginTest@9f116cc]" started-at="2025-07-27T23:18:08 IST" name="configAfterMethod" finished-at="2025-07-27T23:18:09 IST" duration-ms="946" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAfterMethod -->
-      </class> <!-- com.trello.MyProject.trelloendtoend.TrelloEndToEnd -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.trello.MyProject.trelloendtoend.TrelloLoginTest -->
+    </test> <!-- CreationAndDeletionOfBoardTrelloBoard -->
+  </suite> <!-- TrelloLoginTest -->
 </testng-results>

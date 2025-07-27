@@ -2,7 +2,7 @@
 <suite name="TrelloEndToEnd">
   <test thread-count="5" name="CreationAndDeletionOfBoard">
     <classes>
-      <class name="com.trello.qspiders.trelloendtoend.TrelloEndToEnd"/>
+      <class name="com.trello.MyProject.Trelloendtoend.TrelloEndToEnd"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

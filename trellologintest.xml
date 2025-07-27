@@ -1,0 +1,8 @@
+
+<suite name="TrelloLoginTest">
+  <test thread-count="5" name="CreationAndDeletionOfBoardTrelloBoard">
+    <classes>
+      <class name="com.trello.MyProject.trelloendtoend.TrelloLoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
