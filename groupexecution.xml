@@ -10,9 +10,9 @@
 </groups>
   <test thread-count="5" name="adhoc">
     <classes>
-      <class name="com.trello.qspiders.learntestng.GroupA"/>
-      <class name="com.trello.qspiders.learntestng.GroupC"/>
-      <class name="com.trello.qspiders.learntestng.GroupB"/>
+      <class name="com.trello.MyProject.learntestng.GroupA"/>
+      <class name="com.trello.MyProject.learntestng.GroupC"/>
+      <class name="com.trello.MyProject.learntestng.GroupB"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

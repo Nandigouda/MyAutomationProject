@@ -7,7 +7,7 @@
 		<parameter name="password" value="manager"></parameter>
 		<classes>
 			<class
-				name="com.trello.qspiders.learntestng.OneGoodAutomationScriptUsingAssertion"></class>
+				name="com.trello.MyProject.learntestng.OneGoodAutomationScriptUsingAssertion"></class>
 		</classes>
 	</test> <!-- Test -->
 	<test name="firefoxtest">
@@ -17,7 +17,7 @@
 		<parameter name="password" value="manager"></parameter>
 		<classes>
 			<class
-				name="com.trello.qspiders.learntestng.OneGoodAutomationScriptUsingAssertion"></class>
+				name="com.trello.MyProject.learntestng.OneGoodAutomationScriptUsingAssertion"></class>
 		</classes>
 		</test> <!-- Test -->
 </suite> <!-- Suite -->

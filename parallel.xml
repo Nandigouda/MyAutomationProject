@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
 <suite name="parallelexecution" parallel="tests" thread-count="2">
   <test name="edgeTest">
 		<parameter name="browserName" value="edge"></parameter>
@@ -8,7 +7,7 @@
 		<parameter name="password" value="manager"></parameter>
 		<classes>
 			<class
-				name="com.trello.qspiders.learntestng.OneGoodAutomationScript"></class>
+				name="com.trello.MyProject.learntestng.OneGoodAutomationScript"></class>
 		</classes>
 	</test> <!-- Test -->
 	<test name="firefoxtest">
@@ -18,7 +17,7 @@
 		<parameter name="password" value="manager"></parameter>
 		<classes>
 			<class
-				name="com.trello.qspiders.learntestng.OneGoodAutomationScript"></class>
+				name="com.trello.MyProject.learntestng.OneGoodAutomationScript"></class>
 		</classes>
 		</test> <!-- Test -->
 </suite> <!-- Suite -->
