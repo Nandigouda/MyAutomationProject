@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.trello.MyProject.trelloendtoend.TrelloEndToEnd">
+      <class name="com.trello.MyProject.trelloendtoend.TrelloLoginTest">
         <methods>
-          <include name="DragAndDrop"/>
-          <include name="beforeMethod"/>
-          <include name="Dra"/>
+          <include name="homeCheck_01"/>
           <include name="configBeforeMethod"/>
           <include name="configAfterMethod"/>
         </methods>
-      </class> <!-- com.trello.MyProject.trelloendtoend.TrelloEndToEnd -->
+      </class> <!-- com.trello.MyProject.trelloendtoend.TrelloLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

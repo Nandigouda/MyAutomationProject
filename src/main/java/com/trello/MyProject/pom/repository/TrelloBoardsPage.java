@@ -21,6 +21,12 @@ public class TrelloBoardsPage {
 	public WebElement getCreateBoard() {
 		return createBoard;
 	}
+	@FindBy(xpath = "//span[@class='QEGH0t6lsxm4C9 u_1vIqpbgZLsMp'][normalize-space()='Boards']")
+	private WebElement Boards;
+
+	public WebElement getBoards() {
+		return Boards;
+	}
 
 	@FindBy(xpath = "//div[@title='qasm6']")
 	private WebElement qasm6Board;

@@ -1,12 +1,9 @@
 package com.trello.MyProject.dropdownstest;
 
-import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

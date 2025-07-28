@@ -1,12 +1,9 @@
 package com.trello.MyProject.A;
 
-import org.openqa.selenium.Credentials;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.UsernameAndPassword;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.devtools.v123.indexeddb.model.Key;
 
 public class BasicAuth {
 	public static void main(String[] args) throws InterruptedException {

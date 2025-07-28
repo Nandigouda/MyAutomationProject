@@ -18,11 +18,11 @@ import com.trello.MyProject.pom.repository.TrelloLogoutPage;
 import com.trello.MyProject.pom.repository.TrelloPasswordPage;
 import com.trello.MyProject.pom.repository.TrelloUserCreatedBoardsPage;
 
-public class TrelloLoginTest extends BaseClass { 
+public class TrelloLoginTest extends BaseClass {
 
 	@Test
 	public void homeCheck_01() throws IOException, InterruptedException {
-
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		utility.implicitWait(driver);
 		SoftAssert assert1 = new SoftAssert();
 		assert1.assertEquals("Manage Your Team’s Projects From Anywhere | Trello", driver.getTitle());
@@ -51,42 +51,37 @@ public class TrelloLoginTest extends BaseClass {
 		boardsPage.getBoadrTitle().sendKeys(fileUtils.readDataFromPropertyFile("boadrtitle"));
 		utility.elementToBeClickble(driver, boardsPage.getCreatBoadrdClick()).click();
 		TrelloUserCreatedBoardsPage created = new TrelloUserCreatedBoardsPage(driver);
-
-		Thread.sleep(3000);
+		wait.until(ExpectedConditions.titleContains(fileUtils.readDataFromPropertyFile("title2")));
+		
 		driver.switchTo().activeElement().sendKeys("salar");
-
 		created.getAddcardbutton().click();
 		driver.switchTo().activeElement().sendKeys("kgf");
 		created.getAddcardbutton().click();
-
 		utility.elementToBeClickble(driver, created.getProfileIcon()).click();
 		Reporter.log("Boardpage  clicked");
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement closeBoard = wait.until(ExpectedConditions.elementToBeClickable(created.getCloseBoard()));
+		WebElement closeBoard = wait.until(ExpectedConditions.visibilityOf(created.getCloseBoard()));
 		closeBoard.click();
-		Thread.sleep(3000);
-		utility.elementToBeClickble(driver, created.getCloseBoardButton()).click();
-
-		Thread.sleep(3000);
+		utility.elementTobeVisible(driver, created.getCloseBoardButton()).click();
+		Reporter.log("getCloseBoardButton closed");
+		Thread.sleep(2000);
 		utility.elementToBeClickble(driver, created.getProfileIcon()).click();
-
+		Reporter.log("profileicon to delete board clicked");
 		utility.elementToBeClickble(driver, created.getDeletePermenantLinltext()).click();
-		Thread.sleep(3000);
-		created.getDeletePermenantLinltext().click();
-		Thread.sleep(3000);
-		created.getDeletePermanentButton().click();
+		Reporter.log("getDeletePermenantLinltext clicked");
+		utility.elementToBeClickble(driver, created.getDeletePermanentButton()).click();
+		Reporter.log("getDeletePermanentButton clicked");
 		Reporter.log("BoardPage successfully deleted");
-		
-		Thread.sleep(3000);
-		boardsPage.getProfileIcon().click();
-
-		boardsPage.getLogoutoption().click();
-		Thread.sleep(3000);
-		assert1.assertEquals("Log out of your Atlassian account - Log in with Atlassian account", driver.getTitle());
-		assert1.assertEquals("https://id.atlassian.com/logout", driver.getCurrentUrl());
+		wait.until(ExpectedConditions.elementToBeClickable(boardsPage.getBoards())).click();
+		TrelloBoardsPage boardsPage1 = new TrelloBoardsPage(driver);
+		utility.elementToBeClickble(driver, boardsPage1.getProfileIcon()).click();
+		utility.elementToBeClickble(driver, boardsPage1.getLogoutoption()).click();
+		wait.until(
+				ExpectedConditions.titleContains("Log out of your Atlassian account - Log in with Atlassian account"));
+		wait.until(ExpectedConditions.urlContains("https://id.atlassian.com/logout"));
 		TrelloLogoutPage logout = new TrelloLogoutPage(driver);
-		logout.getLogoutButton().click();
-		Reporter.log("Successfually LogedOut of Application");
+		utility.elementToBeClickble(driver, logout.getLogoutButton()).click();
+
+		Reporter.log("Successfully Logged Out of Application");
 
 	}
 

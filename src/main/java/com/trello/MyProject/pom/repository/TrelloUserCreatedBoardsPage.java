@@ -13,15 +13,15 @@ public class TrelloUserCreatedBoardsPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//span[@class='nch-icon hChYpzFshATQo8 FQRfhpoLVAyxHI r1ljm7etlgUs0w']//span[@class='_1e0c1o8l _1o9zidpf _vyfuvuon _vwz4kb7n _1szv15vq _1tly15vq _rzyw1osq _17jb1osq _1ksvoz0e _3se1x1jp _re2rglyw _1veoyfq0 _1kg81r31 _jcxd1r8n _gq0g1onz _1trkwc43']")
+	@FindBy(xpath = "//span[@data-testid='OverflowMenuHorizontalIcon']")
 	private WebElement profileIcon;
 	
 	
 
 	public WebElement getProfileIcon() {
-		return profileIcon;
+		return  profileIcon;
 	}
-	@FindBy(xpath = "//span[@title='Nikhil Nandigoud (nikhilnandigoud)']")
+	@FindBy(xpath = "//span[@class='lyE6dN0zPcEtwe PXrUPxLInxAuOB UUXk7U_m2LcHHZ']")
 	private WebElement profileIcon1;
 	
 	
@@ -58,14 +58,14 @@ public class TrelloUserCreatedBoardsPage {
 		return closeBoardButton;
 	}
 
-	@FindBy(xpath = "//li/button[text()='Permanently delete board']")
+	@FindBy(xpath = "//button[normalize-space()='Permanently delete board']")
 	private WebElement deletePermenantLinltext;
 
 	public WebElement getDeletePermenantLinltext() {
 		return deletePermenantLinltext;
 	}
 
-	@FindBy(xpath = "//button[normalize-space()='Permanently delete board']")
+	@FindBy(xpath = "//button[normalize-space()='Delete']")
 	private WebElement deletePermanentButton;
 
 	public WebElement getDeletePermanentButton() {
